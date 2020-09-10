@@ -15,7 +15,6 @@ ul {
 .menu_list_item {
 	display: inline-block;
 	vertical-align: top;
-	background: #fff;
 	position: relative;
 	margin-right: 25px;
 }
@@ -33,9 +32,10 @@ ul {
 .menu_list_link {
 	font:32px/37px Helvetica, Arial, sans-serif;
 	text-decoration: none;
+	background: #fff;
 	color: #000;
 	text-transform: uppercase;
-	padding: 30px 25px 25px 50px;
+	padding: 32px 25px 27px 25px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -50,7 +50,7 @@ ul {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 46px 0 46px 25px;
+    border-width: 48px 0 48px 25px;
     border-color: transparent transparent transparent #fff;
 }
 
@@ -63,9 +63,9 @@ ul {
 	width: 0;
     height: 0;
     border-right: 0 solid #fff;
-    border-top: 46px solid #fff;
+    border-top: 48px solid #fff;
     border-left: 25px solid transparent;
-    border-bottom: 46px solid #fff;
+    border-bottom: 48px solid #fff;
 }
 
 
@@ -83,11 +83,28 @@ ul {
 
 .menu_list_link:hover:before {
 	border-right: 0 solid #ccc;
-    border-top: 46px solid #ccc;
+    border-top: 48px solid #ccc;
     border-left: 25px solid transparent;
-    border-bottom: 46px solid #ccc;
+    border-bottom: 48px solid #ccc;
 
 }
 
 
 
+.menu_list_link.r:hover {
+ background: rgba(255,255,255, 0.7);
+
+ }
+
+ .menu_list_link.r:hover:after {
+	content: '';
+	border-color: transparent transparent transparent rgba(255,255,255, 0.7);
+} 
+
+.menu_list_link.r:hover:before {
+	border-right: 0 solid rgba(255,255,255, 0.7);
+    border-top: 48px solid rgba(255,255,255, 0.7);
+    border-left: 25px solid transparent;
+    border-bottom: 48px solid rgba(255,255,255, 0.7);
+
+}
