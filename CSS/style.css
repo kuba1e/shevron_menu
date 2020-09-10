@@ -72,7 +72,6 @@ ul {
 
 
 .menu_list_link:hover{
-
 	background: #ccc;
 }
 
@@ -91,20 +90,20 @@ ul {
 
 
 
-.menu_list_link.r:hover {
- background: rgba(255,255,255, 0.7);
-
+.gradient .menu_list_link:hover {
+ 	background: rgba(255,255,255, 0.7);
  }
 
- .menu_list_link.r:hover:after {
+.gradient .menu_list_link:hover:after {
 	content: '';
 	border-color: transparent transparent transparent rgba(255,255,255, 0.7);
 } 
 
-.menu_list_link.r:hover:before {
+.gradient .menu_list_link:hover:before {
 	border-right: 0 solid rgba(255,255,255, 0.7);
     border-top: 48px solid rgba(255,255,255, 0.7);
     border-left: 25px solid transparent;
     border-bottom: 48px solid rgba(255,255,255, 0.7);
-
 }
+
+
